@@ -90,7 +90,15 @@ export class AppModule {
 ##### Example input data
 
 ```angular2html
-
+{
+    "accession": "P31800",
+    "superposition": true,
+    "superpositionParams": {
+        "segment": 1,
+        "ligandView": true,
+        "superposeAll": true
+    }
+}
 ```
 
 ## Versioning
