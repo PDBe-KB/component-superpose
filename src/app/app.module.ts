@@ -1,16 +1,23 @@
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import {NgModule} from '@angular/core';
+import {BrowserModule} from '@angular/platform-browser';
 
-import { AppComponent } from './app.component';
+import {AppComponent} from './app.component';
+import {SuperposeComponent} from './superpose/superpose.component';
+import {MatDialogModule} from '@angular/material';
+import { MolstarDialogComponent } from './molstar-dialog/molstar-dialog.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    SuperposeComponent,
+    MolstarDialogComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}

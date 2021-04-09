@@ -1,0 +1,8 @@
+<span *ngIf="superposeModalData" class="label-tooltip" style="width: 100%">
+  <button class="button padding-small industry-background" (click)="openMolstarDialog(0)"
+          onclick="gtag('event', 'click', {'event_category': 'superpose', 'event_label': 'superpose_all', 'value': 'clicked'})">
+    {{label}}
+    <i class="icon icon-functional" data-icon="4"></i>
+  </button>
+  <span class="label-tooltip-text">{{tooltip}}</span>
+</span>

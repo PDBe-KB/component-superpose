@@ -1,0 +1,45 @@
+.button {
+  width: 100%;
+}
+
+.padding-small {
+  padding: 0.5em 1em;
+  font-size: 0.8rem;
+  margin-bottom: 5px;
+}
+
+.label-tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.label-tooltip .label-tooltip-text {
+  visibility: hidden;
+  width: 150px;
+  background-color: white;
+  color: #0a0a0a;
+  text-align: center;
+  border: solid 2px black;
+  border-radius: 6px;
+  padding: 5px 3px 5px 3px;
+  position: absolute;
+  z-index: 1;
+  top: 150%;
+  left: 50%;
+  margin-left: -60px;
+}
+
+.label-tooltip .label-tooltip-text::after {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent black transparent;
+}
+
+.label-tooltip:hover .label-tooltip-text {
+  visibility: visible;
+}
